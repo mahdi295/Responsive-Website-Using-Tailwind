@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>TechMaster</title>
+  </head>
+  <body
+    class="scroll-smooth bg-gradient-to-br from-gray-900 via-gray-800 to-black font-[Inter] text-gray-100 text-base"
+  >
+    <!-- Navbar -->
+    <header
+      class="sticky top-0 z-50 bg-gray-800/50 backdrop-blur-md rounded-xl shadow-md"
+    >
+      <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+          <!-- Logo and Brand -->
+          <div class="flex items-center gap-2 flex-shrink-0">
+            <img
+              src="./photo_2025-09-30_15-36-28-removebg-preview.png"
+              alt="logo"
+              class="h-14"
+            />
+            <a href="#home" class="text-white font-bold text-lg sm:text-2xl"
+              >TechMaster</a
+            >
+          </div>
+
+          <!-- Desktop Menu -->
+          <ul class="hidden md:flex items-center gap-6 text-white text-base">
+            <li>
+              <a
+                href="#home"
+                class="p-2 border-b-2 border-transparent hover:border-blue-500 transition duration-300 ease-in-out"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="#products"
+                class="p-2 border-b-2 border-transparent hover:border-blue-500 transition duration-300 ease-in-out"
+                >Products</a
+              >
+            </li>
+            <li>
+              <a
+                href="#reviews"
+                class="p-2 border-b-2 border-transparent hover:border-blue-500 transition duration-300 ease-in-out"
+                >Review</a
+              >
+            </li>
+            <li>
+              <a
+                href="#contact"
+                class="p-2 border-b-2 border-transparent hover:border-blue-500 transition duration-300 ease-in-out"
+                >Contact</a
+              >
+            </li>
+          </ul>
+
+          <!-- Mobile Hamburger -->
+          <div class="md:hidden relative text-center">
+            <input type="checkbox" id="menu-toggle" class="hidden peer" />
+            <label for="menu-toggle" class="cursor-pointer text-white text-2xl">
+              <i class="fas fa-bars"></i>
+            </label>
+
+            <!-- Mobile Menu -->
+            <div
+              class="absolute top-full right-4 mt-4 w-48 max-w-xs bg-gray-900 border border-white/30 rounded-lg hidden peer-checked:flex peer-checked:flex-col space-y-2 p-4 z-40"
+            >
+              <a
+                href="#home"
+                class="p-2 border-b-2 border-transparent hover:border-blue-500 transition duration-300 ease-in-out"
+                >Home</a
+              >
+              <a
+                href="#products"
+                class="p-2 border-b-2 border-transparent hover:border-blue-500 transition duration-300 ease-in-out"
+                >Products</a
+              >
+              <a
+                href="#reviews"
+                class="p-2 border-b-2 border-transparent hover:border-blue-500 transition duration-300 ease-in-out"
+                >Review</a
+              >
+              <a
+                href="#contact"
+                class="p-2 border-b-2 border-transparent hover:border-blue-500 transition duration-300 ease-in-out"
+                >Contact</a
+              >
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Section-->
+    <section
+      id="home"
+      class="relative min-h-[80vh] flex items-center sm:bg-cover bg-contain bg-center sm:bg-[center_right_-4rem] md:bg-right bg-no-repeat px-6 lg:px-20 text-white"
+      style="background-image: url('./learn-page-dt-hero-banner-4-11.avif')"
+    >
+      <div class="absolute inset-0 bg-black/70"></div>
+      <div class="relative z-10 max-w-2xl space-y-6">
+        <h1 class="text-4xl sm:text-5xl font-bold leading-tight drop-shadow-xl">
+          Power Up Your <span class="text-blue-500">Performance</span>
+        </h1>
+        <p class="text-lg sm:text-xl leading-relaxed text-gray-200">
+          Discover high-performance desktops, gaming rigs, and custom builds
+          designed to match your workflow and budget. Whether you're upgrading,
+          repairing, or starting fresh — we've got the tech and expertise to
+          keep you ahead.
+        </p>
+        <a
+          href="#products"
+          class="inline-block bg-blue-600 hover:bg-blue-800 text-white font-semibold px-6 py-3 rounded-xl transition duration-300 ease-in-out"
+        >
+          See Products
+        </a>
+      </div>
+    </section>
+
+    <!-- Main -->
+    <main>
+      <!-- Products Section -->
+      <section id="products" class="py-20 bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <header class="text-center">
+            <h2 class="text-3xl font-bold text-white">Premium PC Components</h2>
+            <p class="text-gray-400 max-w-2xl mx-auto mt-2">
+              Top-tier hardware from trusted brands — performance you can rely
+              on.
+            </p>
+          </header>
+
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-10"
+          >
+            <!-- Processor -->
+            <article
+              class="bg-gray-800 p-5 rounded-xl shadow-md hover:scale-105 hover:shadow-blue-500 transition duration-300"
+            >
+              <div class="overflow-hidden rounded-md">
+                <img
+                  src="./ryzen-7-7700-01-500x500.webp"
+                  alt="processor"
+                  class="w-full h-full object-contain"
+                />
+              </div>
+              <h3 class="text-white text-lg font-semibold mt-4">
+                AMD Ryzen 7 7700
+              </h3>
+              <p class="text-gray-400 text-sm mt-2">
+                16-core powerhouse with 5.4GHz boost clock. Socket AM5, 8MB L2
+                Cache, 32MB L3 Cache.
+              </p>
+              <div class="flex justify-between items-center mt-4">
+                <span class="text-blue-500 text-xl font-bold">24,900৳</span>
+                <button
+                  class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md transition"
+                >
+                  Buy Now
+                </button>
+              </div>
+            </article>
+
+            <!-- Cooler -->
+            <article
+              class="bg-gray-800 p-5 rounded-xl shadow-md hover:scale-105 hover:shadow-blue-500 transition duration-300"
+            >
+              <div class="overflow-hidden rounded-md">
+                <img
+                  src="./freezer-7-x-01-500x500.webp"
+                  alt="cooler"
+                  class="w-full h-full object-contain bg-white"
+                />
+              </div>
+              <h3 class="text-white text-lg font-semibold mt-4">
+                Arctic Freezer 7X CPU Cooler
+              </h3>
+              <p class="text-gray-400 text-sm mt-2">
+                300-2000 RPM, 100mm fan with MX-4 pre-applied thermal paste.
+                Fluid Dynamic Bearing.
+              </p>
+              <div class="flex justify-between items-center mt-4">
+                <span class="text-blue-500 text-xl font-bold">2,423৳</span>
+                <button
+                  class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md transition"
+                >
+                  Buy Now
+                </button>
+              </div>
+            </article>
+
+            <!-- Motherboard -->
+            <article
+              class="bg-gray-800 p-5 rounded-xl shadow-md hover:scale-105 hover:shadow-blue-500 transition duration-300"
+            >
+              <div class="overflow-hidden rounded-md">
+                <img
+                  src="./battle-ax-b650m-e-pro-v14-01-500x500.webp"
+                  alt="motherboard"
+                  class="w-full h-full object-contain bg-white"
+                />
+              </div>
+              <h3 class="text-white text-lg font-semibold mt-4">
+                Colorful BATTLE-AX B650M-E
+              </h3>
+              <p class="text-gray-400 text-sm mt-2">
+                AMD Ryzen 7000/8000/9000 series, DDR5 up to 7600MHz, 2x M.2
+                slots, Gigabit Ethernet.
+              </p>
+              <div class="flex justify-between items-center mt-4">
+                <span class="text-blue-500 text-xl font-bold">12,229৳</span>
+                <button
+                  class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md transition"
+                >
+                  Buy Now
+                </button>
+              </div>
+            </article>
+
+            <!-- RAM -->
+            <article
+              class="bg-gray-800 p-5 rounded-xl shadow-md hover:scale-105 hover:shadow-blue-500 transition duration-300"
+            >
+              <div class="overflow-hidden rounded-md">
+                <img
+                  src="./delta-tuf-gaming-alliance-rgb-01-500x500.webp"
+                  alt="ram"
+                  class="w-full h-full object-contain"
+                />
+              </div>
+              <h3 class="text-white text-lg font-semibold mt-4">
+                TEAM DELTA RGB 16GB DDR5
+              </h3>
+              <p class="text-gray-400 text-sm mt-2">
+                6000MHz DDR5, 16GB capacity, CL38 latency, 1.25V operating
+                voltage with RGB lighting.
+              </p>
+              <div class="flex justify-between items-center mt-4">
+                <span class="text-blue-500 text-xl font-bold">7,500৳</span>
+                <button
+                  class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md transition"
+                >
+                  Buy Now
+                </button>
+              </div>
+            </article>
+
+            <!-- SSD -->
+            <article
+              class="bg-gray-800 p-5 rounded-xl shadow-md hover:scale-105 hover:shadow-blue-500 transition duration-300"
+            >
+              <div class="overflow-hidden rounded-md bg-white">
+                <img
+                  src="./mp700g4-04-500x500.webp"
+                  alt="ssd"
+                  class="w-full h-full object-contain"
+                />
+              </div>
+              <h3 class="text-white text-lg font-semibold mt-4">
+                MiPhi MP700G4 512GB NVMe SSD
+              </h3>
+              <p class="text-gray-400 text-sm mt-2">
+                PCIe Gen4 x4, M.2 2280, 7000MB/s read, 3700MB/s write speeds
+                with DRAM cache.
+              </p>
+              <div class="flex justify-between items-center mt-4">
+                <span class="text-blue-500 text-xl font-bold">6,350৳</span>
+                <button
+                  class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md transition"
+                >
+                  Buy Now
+                </button>
+              </div>
+            </article>
+
+            <!-- GPU -->
+            <article
+              class="bg-gray-800 p-5 rounded-xl shadow-md hover:scale-105 hover:shadow-blue-500 transition duration-300"
+            >
+              <div class="overflow-hidden rounded-md">
+                <img
+                  src="./geforce-rtx-5060-8gb-007-500x500.webp"
+                  alt="gpu"
+                  class="w-full h-full object-contain"
+                />
+              </div>
+              <h3 class="text-white text-lg font-semibold mt-4">
+                PNY RTX 5060 8GB
+              </h3>
+              <p class="text-gray-400 text-sm mt-2">
+                8GB GDDR7, 3840 CUDA cores, 2497MHz boost clock, 3x DisplayPort
+                2.1b, HDMI 2.1b.
+              </p>
+              <div class="flex justify-between items-center mt-4">
+                <span class="text-blue-500 text-xl font-bold">41,990৳</span>
+                <button
+                  class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md transition"
+                >
+                  Buy Now
+                </button>
+              </div>
+            </article>
+
+            <!-- PSU -->
+            <article
+              class="bg-gray-800 p-5 rounded-xl shadow-md hover:scale-105 hover:shadow-blue-500 transition duration-300"
+            >
+              <div class="overflow-hidden rounded-md">
+                <img
+                  src="./ps-600ax-0001-500x500.webp"
+                  alt="psu"
+                  class="w-full h-full object-contain"
+                />
+              </div>
+              <h3 class="text-white text-lg font-semibold mt-4">
+                1STPlayer PS-600AX PSU
+              </h3>
+              <p class="text-gray-400 text-sm mt-2">
+                600W Bronze certified, APFC, 0.5W standby power, 120mm hydraulic
+                bearing fan.
+              </p>
+              <div class="flex justify-between items-center mt-4">
+                <span class="text-blue-500 text-xl font-bold">5,500৳</span>
+                <button
+                  class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md transition"
+                >
+                  Buy Now
+                </button>
+              </div>
+            </article>
+
+            <!-- Casing -->
+            <article
+              class="bg-gray-800 p-5 rounded-xl shadow-md hover:scale-105 hover:shadow-blue-500 transition duration-300"
+            >
+              <div class="overflow-hidden rounded-md">
+                <img
+                  src="./aura-gc11-wood-01-500x500.webp"
+                  alt="case"
+                  class="w-full h-full object-contain bg-white"
+                />
+              </div>
+              <h3 class="text-white text-lg font-semibold mt-4">
+                Gamdias AURA GC11 WOOD
+              </h3>
+              <p class="text-gray-400 text-sm mt-2">
+                ATX/Micro-ATX/Mini-ITX support, real walnut mesh panel, 4x 120mm
+                ARGB fans included.
+              </p>
+              <div class="flex justify-between items-center mt-4">
+                <span class="text-blue-500 text-xl font-bold">4,450৳</span>
+                <button
+                  class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md transition"
+                >
+                  Buy Now
+                </button>
+              </div>
+            </article>
+
+            <!-- Monitor -->
+            <article
+              class="bg-gray-800 p-5 rounded-xl shadow-md hover:scale-105 hover:shadow-blue-500 transition duration-300"
+            >
+              <div class="overflow-hidden rounded-md">
+                <img
+                  src="./sa222qe-white-01-500x500.webp"
+                  alt="monitor"
+                  class="w-full h-full object-contain"
+                />
+              </div>
+              <h3 class="text-white text-lg font-semibold mt-4">
+                Acer SA222Q 21.5" Monitor
+              </h3>
+              <p class="text-gray-400 text-sm mt-2">
+                FHD 1920x1080, 100Hz refresh rate, 1ms response time, VGA/HDMI,
+                Low Blue Light.
+              </p>
+              <div class="flex justify-between items-center mt-4">
+                <span class="text-blue-500 text-xl font-bold">13,000৳</span>
+                <button
+                  class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md transition"
+                >
+                  Buy Now
+                </button>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Review -->
+      <section id="reviews" class="py-20 bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <header class="text-center mb-12">
+            <h2 class="text-3xl sm:text-4xl font-bold text-white">
+              What Our Customers Say
+            </h2>
+            <p class="text-gray-400 mt-2 max-w-2xl mx-auto">
+              Real experiences from PC enthusiasts who trust TechMaster.
+            </p>
+          </header>
+
+          <div class="flex flex-wrap justify-center gap-8">
+            <!-- Review 1 -->
+            <article
+              class="bg-gray-800 p-8 rounded-xl shadow-md w-full sm:w-80"
+            >
+              <div class="flex items-center gap-4 mb-3">
+                <img
+                  src="./photo_2025-09-26_08-54-10.jpg"
+                  alt="Iftekhar Ahmed Rafi"
+                  class="w-14 h-14 rounded-full object-cover"
+                />
+                <div>
+                  <h3 class="text-white font-semibold">Iftekhar Ahmed Rafi</h3>
+                  <div class="text-yellow-400">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                </div>
+              </div>
+              <p class="text-gray-400 text-sm">
+                Built my first gaming PC with components from TechMaster. Highly
+                recommend for anyone building a custom rig!
+              </p>
+            </article>
+
+            <!-- Review 2 -->
+            <article
+              class="bg-gray-800 p-5 rounded-xl shadow-md w-full sm:w-80"
+            >
+              <div class="flex items-center gap-4 mb-3">
+                <img
+                  src="./photo_2025-04-23_00-51-32.jpg"
+                  alt="Ashikur Rahman"
+                  class="w-14 h-14 rounded-full object-cover"
+                />
+                <div>
+                  <h3 class="text-white font-semibold">Ashikur Rahman</h3>
+                  <div class="text-yellow-400">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                </div>
+              </div>
+              <p class="text-gray-400 text-sm">
+                Excellent service and genuine products. Upgraded my GPU and the
+                performance boost is incredible.
+              </p>
+            </article>
+
+            <!-- Review 3 -->
+            <article
+              class="bg-gray-800 p-5 rounded-xl shadow-md w-full sm:w-80"
+            >
+              <div class="flex items-center gap-4 mb-3">
+                <img
+                  src="./photo_2025-08-21_23-31-20.jpg"
+                  alt="Momtasir Rahman"
+                  class="w-14 h-14 rounded-full object-cover"
+                />
+                <div>
+                  <h3 class="text-white font-semibold">Momtasir Rahman</h3>
+                  <div class="text-yellow-400">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                </div>
+              </div>
+              <p class="text-gray-400 text-sm">
+                Great selection of components and fair pricing. Got my RTX 5060
+                from here and it was delivered quickly.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section id="cta" class="bg-gray-900 py-20 text-center">
+        <div class="max-w-4xl mx-auto">
+          <h2
+            class="text-2xl sm:text-3xl lg:text-4xl font-bold text-white"
+          >
+            Ready to Build Your Dream PC?
+          </h2>
+          <p class="text-gray-400 mt-3 text-sm sm:text-base max-w-2xl mx-auto">
+            Get expert guidance, quality components, and exceptional support.
+            Join thousands of satisfied builders who chose TechMaster for their
+            custom builds and upgrades.
+          </p>
+          <a
+            href="#contact"
+            class="inline-block mt-6 bg-blue-600 hover:bg-blue-800 text-white font-semibold px-6 py-3 rounded-xl transition duration-300 ease-in-out text-sm sm:text-base"
+          >
+            Get Free Consultation
+          </a>
+        </div>
+      </section>
+
+      <!-- newsletter -->
+      <section id="newsletter">
+        <div>
+          <header>
+            <h2>Stay Updated</h2>
+            <p>
+              Subscribe to get the latest deals, new product launches, and PC
+              building tips delivered to your inbox.
+            </p>
+          </header>
+          <form>
+            <input type="email" placeholder="Enter your email" required />
+            <button type="submit">Subscribe Now</button>
+          </form>
+        </div>
+      </section>
+
+      <!-- CONTACT SECTION -->
+      <section id="contact">
+        <div>
+          <header>
+            <h2>Contact Us</h2>
+            <p>
+              Visit our store, call us, or send a message. We're here to help
+              with all your PC building needs.
+            </p>
+          </header>
+
+          <!-- Contact Grid Wrapper -->
+          <div>
+            <!-- Contact Information -->
+            <div>
+              <!-- Address -->
+              <div>
+                <div>
+                  <div>
+                    <i class="fas fa-map-marker-alt"></i>
+                  </div>
+                  <div>
+                    <h3>Visit Our Store</h3>
+                    <p>
+                      TechMaster PC Shop<br />
+                      45 Multiplan Center, Level 3<br />
+                      Elephant Road, Dhaka 1205<br />
+                      Bangladesh
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Email -->
+              <div>
+                <div>
+                  <div>
+                    <i class="fas fa-envelope"></i>
+                  </div>
+                  <div>
+                    <h3>Email Us</h3>
+                    <p>info@techmaster.com.bd<br />support@techmaster.com.bd</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Phone -->
+              <div>
+                <div>
+                  <div>
+                    <i class="fas fa-phone"></i>
+                  </div>
+                  <div>
+                    <h3>Call Us</h3>
+                    <p>+880 1628-204472<br />+880 1533-181927</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div>
+              <h3>Send Us a Message</h3>
+              <form>
+                <div>
+                  <label for="name">Name</label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    required
+                    placeholder="Your full name"
+                  />
+                </div>
+
+                <div>
+                  <label for="email">Email</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                    placeholder="Your email address"
+                  />
+                </div>
+
+                <div>
+                  <label for="phone">Phone Number</label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    placeholder="Your phone number"
+                  />
+                </div>
+
+                <div>
+                  <label for="subject">Subject</label>
+                  <select id="subject" name="subject">
+                    <option value="">Select a topic</option>
+                    <option value="build">Custom PC Build Inquiry</option>
+                    <option value="product">Product Information</option>
+                    <option value="support">Technical Support</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+
+                <div>
+                  <label for="message">Message</label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    required
+                    placeholder="Message Us"
+                  ></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer -->
+    <footer>
+      <div>
+        <div>
+          <!-- brand -->
+          <div>
+            <h3>TechMaster</h3>
+            <p>
+              Your trusted partner for premium PC components, custom builds, and
+              expert technical support in Bangladesh.
+            </p>
+          </div>
+
+          <!-- quick links -->
+          <div>
+            <h4>Quick Link</h4>
+            <nav>
+              <a href="#home">Home</a>
+              <a href="#products">Products</a>
+              <a href="#reviews">Reviews</a>
+              <a href="#contact">Contact</a>
+            </nav>
+          </div>
+
+          <!-- social links -->
+          <div>
+            <h4>Follow Us</h4>
+            <div>
+              <a href="#" aria-label="Facebook"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a href="#" aria-label="Instagram"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" aria-label="Youtube"
+                ><i class="fab fa-youtube"></i
+              ></a>
+              <a href="#" aria-label="Whatsapp"
+                ><i class="fab fa-whatsapp"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- copyright -->
+        <div>
+          <p>
+            &copy; 2025 TechMaster PC Shop. All rights reserved. Built with
+            passion for technology.
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
