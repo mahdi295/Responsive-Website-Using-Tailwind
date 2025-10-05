@@ -19,13 +19,9 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>TechMaster</title>
   </head>
-  <body
-    class="scroll-smooth bg-gradient-to-br from-gray-900 via-gray-800 to-black font-[Inter] text-gray-100 text-base"
-  >
+  <body class="scroll-smooth bg-gray-950 font-[Inter] text-gray-100 text-base">
     <!-- Navbar -->
-    <header
-      class="sticky top-0 z-50 bg-gray-800/50 backdrop-blur-md shadow-md"
-    >
+    <header class="sticky top-0 z-50 bg-gray-800/50 backdrop-blur-md shadow-md">
       <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex items-center justify-between h-16">
           <!-- Logo and Brand -->
@@ -498,11 +494,9 @@
       </section>
 
       <!-- CTA -->
-      <section id="cta" class="bg-gray-900 py-20 text-center">
+      <section id="cta" class="bg-gray-950 py-20 text-center">
         <div class="max-w-4xl mx-auto">
-          <h2
-            class="text-2xl sm:text-3xl lg:text-4xl font-bold text-white"
-          >
+          <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-white">
             Ready to Build Your Dream PC?
           </h2>
           <p class="text-gray-400 mt-3 text-sm sm:text-base max-w-2xl mx-auto">
@@ -520,121 +514,139 @@
       </section>
 
       <!-- newsletter -->
-      <section id="newsletter">
-        <div>
-          <header>
-            <h2>Stay Updated</h2>
-            <p>
+      <section id="newsletter" class="py-16 bg-gray-950">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <header class="text-center mb-6">
+            <h2 class="text-3xl text-white font-semibold mb-4">Stay Updated</h2>
+            <p class="text-white max-w-xl mx-auto mt-2">
               Subscribe to get the latest deals, new product launches, and PC
               building tips delivered to your inbox.
             </p>
           </header>
-          <form>
-            <input type="email" placeholder="Enter your email" required />
-            <button type="submit">Subscribe Now</button>
+          <form class="flex flex-col sm:flex-row justify-center gap-4">
+            <input
+              type="email"
+              placeholder="Enter your email"
+              required
+              class="px-4 py-2 rounded-md w-full sm:w-80 bg-gray-800 text-gray-200 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+            <button
+              type="submit"
+              class="bg-blue-600 hover:bg-blue-800 text-white px-6 py-2 rounded-md transition duration-300 ease-in-out"
+            >
+              Subscribe Now
+            </button>
           </form>
         </div>
       </section>
 
       <!-- CONTACT SECTION -->
-      <section id="contact">
-        <div>
-          <header>
-            <h2>Contact Us</h2>
-            <p>
+      <section id="contact" class="py-20 bg-gray-950">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <header class="text-center">
+            <h2 class="text-3xl font-semibold text-white mb-4">Contact Us</h2>
+            <p class="text-gray-400 max-w-2xl mx-auto mt-2">
               Visit our store, call us, or send a message. We're here to help
               with all your PC building needs.
             </p>
           </header>
 
-          <!-- Contact Grid Wrapper -->
-          <div>
-            <!-- Contact Information -->
-            <div>
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 mt-16">
+            <!-- Contact Info -->
+            <div class="flex flex-col justify-center items-center space-y-4">
               <!-- Address -->
-              <div>
+              <div class="flex gap-4 items-start bg-gray-800 p-4 rounded-lg">
+                <i class="fas fa-map-marker-alt text-blue-500 text-xl"></i>
                 <div>
-                  <div>
-                    <i class="fas fa-map-marker-alt"></i>
-                  </div>
-                  <div>
-                    <h3>Visit Our Store</h3>
-                    <p>
-                      TechMaster PC Shop<br />
-                      45 Multiplan Center, Level 3<br />
-                      Elephant Road, Dhaka 1205<br />
-                      Bangladesh
-                    </p>
-                  </div>
+                  <h3 class="text-white font-medium">Visit Our Store</h3>
+                  <p class="text-gray-300 text-sm mt-1">
+                    TechMaster PC Shop<br />
+                    45 Multiplan Center, Level 3<br />
+                    Elephant Road, Dhaka 1205<br />
+                    Bangladesh
+                  </p>
                 </div>
               </div>
 
               <!-- Email -->
-              <div>
+              <div class="flex gap-4 items-start bg-gray-800 p-4 rounded-lg">
+                <i class="fas fa-envelope text-blue-500 text-xl"></i>
                 <div>
-                  <div>
-                    <i class="fas fa-envelope"></i>
-                  </div>
-                  <div>
-                    <h3>Email Us</h3>
-                    <p>info@techmaster.com.bd<br />support@techmaster.com.bd</p>
-                  </div>
+                  <h3 class="text-white font-medium">Email Us</h3>
+                  <p class="text-gray-300 text-sm mt-1">
+                    info@techmaster.com.bd<br />support@techmaster.com.bd
+                  </p>
                 </div>
               </div>
 
               <!-- Phone -->
-              <div>
+              <div class="flex gap-4 items-start bg-gray-800 p-4 rounded-lg">
+                <i class="fas fa-phone text-blue-500 text-xl"></i>
                 <div>
-                  <div>
-                    <i class="fas fa-phone"></i>
-                  </div>
-                  <div>
-                    <h3>Call Us</h3>
-                    <p>+880 1628-204472<br />+880 1533-181927</p>
-                  </div>
+                  <h3 class="text-white font-medium">Call Us</h3>
+                  <p class="text-gray-300 text-sm mt-1">
+                    +880 1628-204472<br />+880 1533-181927
+                  </p>
                 </div>
               </div>
             </div>
 
             <!-- Contact Form -->
-            <div>
-              <h3>Send Us a Message</h3>
-              <form>
+            <div class="bg-gray-800 p-6 rounded-lg">
+              <h3 class="text-white text-2xl font-semibold mb-4 text-center">
+                Send Us a Message
+              </h3>
+              <form class="space-y-4">
                 <div>
-                  <label for="name">Name</label>
+                  <label for="name" class="block text-gray-300 text-sm mb-1"
+                    >Name</label
+                  >
                   <input
                     type="text"
                     id="name"
                     name="name"
                     required
                     placeholder="Your full name"
+                    class="w-full p-2 bg-gray-900 rounded-md text-gray-200 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500"
                   />
                 </div>
 
                 <div>
-                  <label for="email">Email</label>
+                  <label for="email" class="block text-gray-300 text-sm mb-1"
+                    >Email</label
+                  >
                   <input
                     type="email"
                     id="email"
                     name="email"
                     required
                     placeholder="Your email address"
+                    class="w-full p-2 bg-gray-900 rounded-md text-gray-200 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500"
                   />
                 </div>
 
                 <div>
-                  <label for="phone">Phone Number</label>
+                  <label for="phone" class="block text-gray-300 text-sm mb-1"
+                    >Phone Number</label
+                  >
                   <input
                     type="tel"
                     id="phone"
                     name="phone"
                     placeholder="Your phone number"
+                    class="w-full p-2 bg-gray-900 rounded-md text-gray-200 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500"
                   />
                 </div>
 
                 <div>
-                  <label for="subject">Subject</label>
-                  <select id="subject" name="subject">
+                  <label for="subject" class="block text-gray-300 text-sm mb-1"
+                    >Subject</label
+                  >
+                  <select
+                    id="subject"
+                    name="subject"
+                    class="w-full p-2 bg-gray-900 rounded-md text-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  >
                     <option value="">Select a topic</option>
                     <option value="build">Custom PC Build Inquiry</option>
                     <option value="product">Product Information</option>
@@ -644,16 +656,25 @@
                 </div>
 
                 <div>
-                  <label for="message">Message</label>
+                  <label for="message" class="block text-gray-300 text-sm mb-1"
+                    >Message</label
+                  >
                   <textarea
                     id="message"
                     name="message"
                     rows="5"
                     required
                     placeholder="Message Us"
+                    class="w-full p-2 bg-gray-900 rounded-md text-gray-200 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500 resize-none"
                   ></textarea>
                 </div>
-                <button type="submit">Send Message</button>
+
+                <button
+                  type="submit"
+                  class="w-full bg-blue-600 hover:bg-blue-800 text-white px-5 py-2 rounded-md transition"
+                >
+                  Send Message
+                </button>
               </form>
             </div>
           </div>
@@ -662,18 +683,18 @@
     </main>
 
     <!-- footer -->
-    <footer class="bg-gray-900 text-white px-6 py-12">
+    <footer class="bg-gray-800 text-white px-6 py-12">
       <div class="max-w-7xl mx-auto">
         <div class="flex flex-wrap justify-between gap-8 mb-10">
           <!-- brand -->
           <div class="w-full sm:w-1/2 lg:w-1/3">
             <div class="flex items-center gap-1 flex-shrink-0">
               <img
-              src="./photo_2025-09-30_15-36-28-removebg-preview.png"
-              alt="logo"
-              class="h-14"
-            />
-            <h3 class="text-white text-2xl font-semibold">TechMaster</h3>
+                src="./photo_2025-09-30_15-36-28-removebg-preview.png"
+                alt="logo"
+                class="h-14"
+              />
+              <h3 class="text-white text-2xl font-semibold">TechMaster</h3>
             </div>
             <p>
               Your trusted partner for premium PC components, custom builds, and
@@ -695,7 +716,7 @@
           <!-- social links -->
           <div>
             <h4 class="text-white text-lg font-semibold mb-3">Follow Us</h4>
-            <div class="flex gap-4 text-xl">
+            <div class="flex gap-4 text-2xl">
               <a href="#" class="hover:text-blue-500" aria-label="Facebook"
                 ><i class="fab fa-facebook"></i
               ></a>
