@@ -18,6 +18,177 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
     <title>TechMaster</title>
+    <style>
+      @supports (animation-timeline: view()) {
+        /* Keyframe */
+        @keyframes fadeInUp {
+          from {
+            opacity: 0;
+            transform: translateY(60px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+
+        @keyframes fadeInLeft {
+          from {
+            opacity: 0;
+            transform: translateX(-60px);
+          }
+          to {
+            opacity: 1;
+            transform: translateX(0);
+          }
+        }
+
+        @keyframes fadeInRight {
+          from {
+            opacity: 0;
+            transform: translateX(60px);
+          }
+          to {
+            opacity: 1;
+            transform: translateX(0);
+          }
+        }
+
+        @keyframes scaleIn {
+          from {
+            opacity: 0;
+            transform: scale(0.85);
+          }
+          to {
+            opacity: 1;
+            transform: scale(1);
+          }
+        }
+
+        @keyframes slideInRotate {
+          from {
+            opacity: 0;
+            transform: translateY(50px) rotate(-5deg);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0) rotate(0deg);
+          }
+        }
+
+        /* Hero */
+        #home > div:nth-child(2) {
+          animation: fadeInLeft linear both;
+          animation-timeline: view();
+          animation-range: entry 0% cover 35%;
+        }
+
+        /* Headers */
+        section header {
+          animation: scaleIn linear both;
+          animation-timeline: view();
+          animation-range: entry 0% cover 20%;
+        }
+
+        /* Product Cards */
+        #products article {
+          animation: fadeInUp linear both;
+          animation-timeline: view();
+          animation-range: entry 0% cover 30%;
+        }
+
+        #products article:nth-child(3n + 1) {
+          animation-name: fadeInLeft;
+        }
+
+        #products article:nth-child(3n + 2) {
+          animation-name: fadeInUp;
+        }
+
+        #products article:nth-child(3n) {
+          animation-name: fadeInRight;
+        }
+
+        /* Review */
+        #reviews article {
+          animation: slideInRotate linear both;
+          animation-timeline: view();
+          animation-range: entry 0% cover 35%;
+        }
+
+        #reviews article:nth-child(1) {
+          animation-delay: 0s;
+        }
+
+        #reviews article:nth-child(2) {
+          animation-delay: 0.1s;
+        }
+
+        #reviews article:nth-child(3) {
+          animation-delay: 0.2s;
+        }
+
+        /* CTA */
+        #cta > div {
+          animation: scaleIn linear both;
+          animation-timeline: view();
+          animation-range: entry 0% cover 30%;
+        }
+
+        /* Newsletter */
+        #newsletter header {
+          animation: fadeInUp linear both;
+          animation-timeline: view();
+          animation-range: entry 0% cover 25%;
+        }
+
+        #newsletter form {
+          animation: fadeInUp linear both;
+          animation-timeline: view();
+          animation-range: entry 10% cover 35%;
+        }
+
+        /* Contact */
+        #contact .flex.flex-col > div {
+          animation: fadeInLeft linear both;
+          animation-timeline: view();
+          animation-range: entry 0% cover 30%;
+        }
+
+        #contact .flex.flex-col > div:nth-child(1) {
+          animation-delay: 0s;
+        }
+
+        #contact .flex.flex-col > div:nth-child(2) {
+          animation-delay: 0.1s;
+        }
+
+        #contact .flex.flex-col > div:nth-child(3) {
+          animation-delay: 0.2s;
+        }
+
+        /* Contact Form */
+        #contact .bg-gray-800.p-6 {
+          animation: fadeInRight linear both;
+          animation-timeline: view();
+          animation-range: entry 0% cover 30%;
+        }
+      }
+
+      /* Fallback for browsers without scroll-timeline support */
+      @supports not (animation-timeline: view()) {
+        /* Ensure everything is visible in unsupported browsers */
+        * {
+          opacity: 1 !important;
+          transform: none !important;
+        }
+      }
+
+      /* Smooth scroll padding for fixed header */
+      html {
+        scroll-padding-top: 80px;
+      }
+    </style>
   </head>
   <body class="bg-gray-950 font-[Inter] text-gray-100 text-base">
     <!-- Navbar -->
