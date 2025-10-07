@@ -191,20 +191,65 @@
     </style>
   </head>
   <body class="bg-gray-950 font-[Inter] text-gray-100 text-base">
-    <!-- Navbar -->
     <header class="sticky top-0 z-50 bg-gray-800/50 backdrop-blur-md shadow-md">
       <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex items-center justify-between h-16">
           <!-- Logo and Brand -->
-          <div class="flex items-center gap-2 flex-shrink-0">
+          <a href="#home" class="flex items-center gap-2 flex-shrink-0">
             <img
               src="./photo_2025-09-30_15-36-28-removebg-preview.png"
               alt="logo"
-              class="h-14"
+              class="h-14 w-auto object-contain"
             />
-            <a href="#home" class="text-white font-bold text-lg sm:text-2xl"
-              >TechMaster</a
+            <span class="text-white font-bold text-lg sm:text-2xl"
+              >TechMaster</span
             >
+          </a>
+
+          <!-- Hamburger Toggle -->
+          <div class="md:hidden">
+            <input type="checkbox" id="menu-toggle" class="peer hidden" />
+            <label for="menu-toggle" class="cursor-pointer text-white text-2xl">
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+            </label>
+
+            <!-- Mobile Menu -->
+            <div
+              class="items-center peer-checked:flex hidden flex-col absolute right-4 mt-4 w-48 bg-gray-900 border border-white/30 rounded-lg p-4 space-y-2 z-40"
+            >
+              <a
+                href="#home"
+                class="text-white border-b-2 border-transparent hover:border-blue-500 transition p-1 w-fit"
+                >Home</a
+              >
+              <a
+                href="#products"
+                class="text-white border-b-2 border-transparent hover:border-blue-500 transition p-1 w-fit"
+                >Products</a
+              >
+              <a
+                href="#reviews"
+                class="text-white border-b-2 border-transparent hover:border-blue-500 transition p-1 w-fit"
+                >Review</a
+              >
+              <a
+                href="#contact"
+                class="text-white border-b-2 border-transparent hover:border-blue-500 transition p-1 w-fit"
+                >Contact</a
+              >
+            </div>
           </div>
 
           <!-- Desktop Menu -->
@@ -212,66 +257,32 @@
             <li>
               <a
                 href="#home"
-                class="p-2 border-b-2 border-transparent hover:border-blue-500 transition duration-300 ease-in-out"
+                class="p-1 border-b-2 border-transparent hover:border-blue-500 transition"
                 >Home</a
               >
             </li>
             <li>
               <a
                 href="#products"
-                class="p-2 border-b-2 border-transparent hover:border-blue-500 transition duration-300 ease-in-out"
+                class="p-1 border-b-2 border-transparent hover:border-blue-500 transition"
                 >Products</a
               >
             </li>
             <li>
               <a
                 href="#reviews"
-                class="p-2 border-b-2 border-transparent hover:border-blue-500 transition duration-300 ease-in-out"
+                class="p-1 border-b-2 border-transparent hover:border-blue-500 transition"
                 >Review</a
               >
             </li>
             <li>
               <a
                 href="#contact"
-                class="p-2 border-b-2 border-transparent hover:border-blue-500 transition duration-300 ease-in-out"
+                class="p-1 border-b-2 border-transparent hover:border-blue-500 transition"
                 >Contact</a
               >
             </li>
           </ul>
-
-          <!-- Mobile Hamburger -->
-          <div class="md:hidden relative text-center">
-            <input type="checkbox" id="menu-toggle" class="hidden peer" />
-            <label for="menu-toggle" class="cursor-pointer text-white text-2xl">
-              <i class="fas fa-bars"></i>
-            </label>
-
-            <!-- Mobile Menu -->
-            <div
-              class="absolute top-full right-4 mt-4 w-48 max-w-xs bg-gray-900 border border-white/30 rounded-lg hidden peer-checked:flex peer-checked:flex-col space-y-2 p-4 z-40"
-            >
-              <a
-                href="#home"
-                class="p-2 border-b-2 border-transparent hover:border-blue-500 transition duration-300 ease-in-out"
-                >Home</a
-              >
-              <a
-                href="#products"
-                class="p-2 border-b-2 border-transparent hover:border-blue-500 transition duration-300 ease-in-out"
-                >Products</a
-              >
-              <a
-                href="#reviews"
-                class="p-2 border-b-2 border-transparent hover:border-blue-500 transition duration-300 ease-in-out"
-                >Review</a
-              >
-              <a
-                href="#contact"
-                class="p-2 border-b-2 border-transparent hover:border-blue-500 transition duration-300 ease-in-out"
-                >Contact</a
-              >
-            </div>
-          </div>
         </div>
       </nav>
     </header>
